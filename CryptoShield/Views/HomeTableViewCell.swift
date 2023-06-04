@@ -72,7 +72,7 @@ class HomeTableViewCell: UITableViewCell {
     
     override func layoutSubviews() { /* 308 */
         super.layoutSubviews() /* 309 */
-        self.layer.cornerRadius = 10 /* 376 */
+        self.layer.cornerRadius = 20 /* 376 */
         self.clipsToBounds = true /* 377 */
         
         addConstraints() /* 359 */
@@ -93,15 +93,15 @@ class HomeTableViewCell: UITableViewCell {
             cryptoSubtitleLabel.leadingAnchor.constraint(equalTo: cryptoIcon.trailingAnchor, constant: margin), /* 358 */
             cryptoSubtitleLabel.topAnchor.constraint(equalTo: cryptoTitleLabel.bottomAnchor, constant: 8), /* 358 */
             cryptoSubtitleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -margin-40), /* 358 */
-        cryptoSubtitleLabel.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -margin), /* 358 */
-                    
-                    //Price Label constraints
-                    cryptoPriceLabel.leadingAnchor.constraint(equalTo: cryptoIcon.trailingAnchor, constant: margin), /* 372 */
-                    cryptoPriceLabel.topAnchor.constraint(equalTo: cryptoSubtitleLabel.topAnchor, constant: margin+20), /* 372 */
-                    cryptoPriceLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -margin-40), /* 372 */
-                    
-                ])
-            }
+            cryptoSubtitleLabel.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -margin), /* 358 */
+            
+            //Price Label constraints
+            cryptoPriceLabel.leadingAnchor.constraint(equalTo: cryptoIcon.trailingAnchor, constant: margin), /* 372 */
+            cryptoPriceLabel.topAnchor.constraint(equalTo: cryptoSubtitleLabel.topAnchor, constant: margin+20), /* 372 */
+            cryptoPriceLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -margin-40), /* 372 */
+            
+                                    ])
+    }
             
             override func prepareForReuse() { /* 310 */
                 super.prepareForReuse() /* 311 */

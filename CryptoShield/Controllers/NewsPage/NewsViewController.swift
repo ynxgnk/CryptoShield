@@ -51,12 +51,12 @@ class NewsViewController: UIViewController {
         coinbaseButton.tintColor = UIColor.systemBlue /* 76 */
         navigationItem.leftBarButtonItem = coinbaseButton /* 77 */
         navigationController?.navigationBar.topItem?.rightBarButtonItems = [
-            UIBarButtonItem(
-                image: UIImage(systemName: "message"),
-                style: .done,
-                target: self,
-                action: #selector(didTapChatButton)
-            ),
+//            UIBarButtonItem(
+//                image: UIImage(systemName: "message"),
+//                style: .done,
+//                target: self,
+//                action: #selector(didTapChatButton)
+//            ),
             UIBarButtonItem(
                 barButtonSystemItem: .search,
                 target: self,

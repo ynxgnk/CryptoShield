@@ -5,53 +5,65 @@
 //  Created by Nazar Kopeika on 04.06.2023.
 //
 
+
+
 import UIKit
 
 final class ProfileViewController: UIViewController {
     
-    private let profileTable: UITableView = { /* 562 */
-        let table = UITableView()
-        table.register(UITableViewCell.self,
-                       forCellReuseIdentifier: "cell") /* 563 */
-        return table /* 564 */
-    }()
-    
-    Fixed bugs with cryptoAPI, added another link to API and fixed number ofSections,470-476
-    
-    private let watchlistTable: UITableView = { /* 572 */
-       let table = UITableView() /* 573 */
-        table.register(UITableViewCell.self,
-                       forCellReuseIdentifier: "cell") /* 574 */
-        return table /* 575 */
+    private let profileTableView: UICollectionView = { /* 618 */
+        let layout = UICollectionViewFlowLayout() /* 619 */
+        layout.scrollDirection = .horizontal /* 620 */
+        layout.itemSize = CGSize(width: 500, height: 300) /* 621 */
+        let table = UICollectionView(frame: .zero, collectionViewLayout: layout) /* 622 */
+        table.register(ProfileDataCollectionViewCell.self,
+                       forCellWithReuseIdentifier: ProfileDataCollectionViewCell.identifier) /* 623 */
+        return table /* 624 */
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground /* 580 */
-        view.addSubview(profileTable) /* 581 */
-        profileTable.backgroundColor = .red /* 582 */
-        view.addSubview(watchlistTable) /* 583 */
-        watchlistTable.backgroundColor = .orange /* 584 */
-        view.addSubview(nameLabel) /* 585 */
-        nameLabel.backgroundColor = .systemGreen /* 586 */
-    }
-    
-    override func viewDidLayoutSubviews() { /* 576 */
-        super.viewDidLayoutSubviews() /* 577 */
-        addConstraints() /* 590 */
+        view.backgroundColor = .systemBackground /* 625 */
+        view.addSubview(profileTableView) /* 626 */
+        profileTableView.backgroundColor = .red /* 580 */
+        
+        profileTableView.delegate = self /* 627 */
+        profileTableView.dataSource = self /* 628 */
+        profileTableView.showsHorizontalScrollIndicator = false /* 629 */
         
     }
     
+    override func viewDidLayoutSubviews() { /* 630 */
+        super.viewDidLayoutSubviews() /* 631 */
+        profileTableView.frame = CGRect(x: 10, y: 50, width: 500, height: 200) /* 588 */
+    }
+    
     private func addConstraints() { /* 587 */
-        NSLayoutConstraint.activate([ /* 588 */
-            watchlistTable.topAnchor.constraint(equalTo: view.topAnchor), /* 589 */
-            watchlistTable.bottomAnchor.constraint(equalTo: view.bottomAnchor), /* 589 */
-            watchlistTable.leadingAnchor.constraint(equalTo: view.leadingAnchor), /* 589 */
-            watchlistTable.trailingAnchor.constraint(equalTo: view.trailingAnchor), /* 589 */
-                                    ])
+        
+    }
+}
+
+
+extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource { /* 632 */
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { /* 633 */
+        3 /* 639 */
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell { /* 634 */
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProfileDataCollectionViewCell.identifier, for: indexPath) as?  ProfileDataCollectionViewCell else { /* 635 */
+            fatalError() /* 636 */
+        }
+        return cell /* 637 */
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { /* 638 */
+        1
     }
     
     
     
-   
 }
+
+
+
+

@@ -34,7 +34,9 @@
 		BA3990DA2A2C4640009D5D6A /* Titles.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3990D92A2C4640009D5D6A /* Titles.swift */; };
 		BA3990DC2A2C4647009D5D6A /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3990DB2A2C4647009D5D6A /* Icons.swift */; };
 		BA3990DE2A2C4655009D5D6A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3990DD2A2C4655009D5D6A /* Extensions.swift */; };
-		BA3990E02A2C606A009D5D6A /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3990DF2A2C606A009D5D6A /* ProfileTableViewCell.swift */; };
+		BA3990E02A2C606A009D5D6A /* ProfileDataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3990DF2A2C606A009D5D6A /* ProfileDataCollectionViewCell.swift */; };
+		BA3990E22A2C7694009D5D6A /* ProfileWatchlistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3990E12A2C7694009D5D6A /* ProfileWatchlistCollectionViewCell.swift */; };
+		BA3990E42A2C8814009D5D6A /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3990E32A2C8814009D5D6A /* ProfileCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,7 +69,9 @@
 		BA3990D92A2C4640009D5D6A /* Titles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titles.swift; sourceTree = "<group>"; };
 		BA3990DB2A2C4647009D5D6A /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		BA3990DD2A2C4655009D5D6A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		BA3990DF2A2C606A009D5D6A /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		BA3990DF2A2C606A009D5D6A /* ProfileDataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA3990E12A2C7694009D5D6A /* ProfileWatchlistCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWatchlistCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA3990E32A2C8814009D5D6A /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,7 @@
 			children = (
 				BA3990C92A2C45CC009D5D6A /* ProfileViewController.swift */,
 				BA3990CB2A2C45DC009D5D6A /* SettingsViewController.swift */,
+				BA3990E12A2C7694009D5D6A /* ProfileWatchlistCollectionViewCell.swift */,
 			);
 			path = ProfilePage;
 			sourceTree = "<group>";
@@ -211,7 +216,8 @@
 				BA3990D32A2C4618009D5D6A /* TitleCollectionViewCell.swift */,
 				BA3990D52A2C4625009D5D6A /* NewsTableViewCell.swift */,
 				BA3990D72A2C4634009D5D6A /* HomeTableViewCell.swift */,
-				BA3990DF2A2C606A009D5D6A /* ProfileTableViewCell.swift */,
+				BA3990DF2A2C606A009D5D6A /* ProfileDataCollectionViewCell.swift */,
+				BA3990E32A2C8814009D5D6A /* ProfileCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -324,7 +330,8 @@
 				BA3990B52A2C44C6009D5D6A /* NewsAPICaller.swift in Sources */,
 				BA3990C62A2C45AE009D5D6A /* SearchNewsViewController.swift in Sources */,
 				BA3990CC2A2C45DC009D5D6A /* SettingsViewController.swift in Sources */,
-				BA3990E02A2C606A009D5D6A /* ProfileTableViewCell.swift in Sources */,
+				BA3990E02A2C606A009D5D6A /* ProfileDataCollectionViewCell.swift in Sources */,
+				BA3990E42A2C8814009D5D6A /* ProfileCollectionViewCell.swift in Sources */,
 				BA3990D62A2C4625009D5D6A /* NewsTableViewCell.swift in Sources */,
 				BA39908F2A2C4385009D5D6A /* AppDelegate.swift in Sources */,
 				BA3990D02A2C45F5009D5D6A /* RegisterViewController.swift in Sources */,
@@ -339,6 +346,7 @@
 				BA3990DE2A2C4655009D5D6A /* Extensions.swift in Sources */,
 				BA3990DA2A2C4640009D5D6A /* Titles.swift in Sources */,
 				BA3990D42A2C4618009D5D6A /* TitleCollectionViewCell.swift in Sources */,
+				BA3990E22A2C7694009D5D6A /* ProfileWatchlistCollectionViewCell.swift in Sources */,
 				BA3990C42A2C4583009D5D6A /* ChatViewController.swift in Sources */,
 				BA3990912A2C4385009D5D6A /* SceneDelegate.swift in Sources */,
 			);
