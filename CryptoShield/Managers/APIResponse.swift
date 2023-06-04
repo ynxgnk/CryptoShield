@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct NewsAPIResponse: Codable { /* 166 */
+    let articles: [NewsTitlesModel] /* 167 */
+}
+
+struct CryptoAPIResponse: Codable { /* 520 */
+    let icons: [Crypto] /* 521 */
+}
