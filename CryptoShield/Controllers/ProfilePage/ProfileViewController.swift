@@ -16,6 +16,15 @@ final class ProfileViewController: UIViewController {
         return table
     }()
     
+    private let nameLabel: UILabel = {
+       let label = UILabel()
+        label.text = "Name"
+        label.font = .systemFont(ofSize: 18, weight: .medium)
+        label.numberOfLines = 1
+        label.backgroundColor = .systemPink
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
