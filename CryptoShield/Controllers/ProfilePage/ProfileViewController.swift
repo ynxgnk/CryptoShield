@@ -9,4 +9,17 @@ import UIKit
 
 final class ProfileViewController: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
 }
