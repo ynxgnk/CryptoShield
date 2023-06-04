@@ -25,6 +25,13 @@ final class ProfileViewController: UIViewController {
         return label
     }()
     
+    private let watchlistTable: UITableView = {
+       let table = UITableView()
+        table.register(UITableViewCell.self,
+                       forCellReuseIdentifier: "cell")
+        return table
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
