@@ -9,6 +9,13 @@ import UIKit
 
 final class ProfileViewController: UIViewController {
     
+    private let table: UITableView = {
+        let table = UITableView()
+        table.register(UITableViewCell.self,
+                       forCellReuseIdentifier: "cell")
+        return table
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
