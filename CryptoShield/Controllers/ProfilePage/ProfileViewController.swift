@@ -9,40 +9,49 @@ import UIKit
 
 final class ProfileViewController: UIViewController {
     
-    private let table: UITableView = {
+    private let profileTable: UITableView = { /* 562 */
         let table = UITableView()
         table.register(UITableViewCell.self,
-                       forCellReuseIdentifier: "cell")
-        return table
+                       forCellReuseIdentifier: "cell") /* 563 */
+        return table /* 564 */
     }()
     
-    private let nameLabel: UILabel = {
-       let label = UILabel()
-        label.text = "Name"
-        label.font = .systemFont(ofSize: 18, weight: .medium)
-        label.numberOfLines = 1
-        label.backgroundColor = .systemPink
-        return label
-    }()
+    Fixed bugs with cryptoAPI, added another link to API and fixed number ofSections,470-476
     
-    private let watchlistTable: UITableView = {
-       let table = UITableView()
+    private let watchlistTable: UITableView = { /* 572 */
+       let table = UITableView() /* 573 */
         table.register(UITableViewCell.self,
-                       forCellReuseIdentifier: "cell")
-        return table
+                       forCellReuseIdentifier: "cell") /* 574 */
+        return table /* 575 */
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemBackground /* 580 */
+        view.addSubview(profileTable) /* 581 */
+        profileTable.backgroundColor = .red /* 582 */
+        view.addSubview(watchlistTable) /* 583 */
+        watchlistTable.backgroundColor = .orange /* 584 */
+        view.addSubview(nameLabel) /* 585 */
+        nameLabel.backgroundColor = .systemGreen /* 586 */
+    }
+    
+    override func viewDidLayoutSubviews() { /* 576 */
+        super.viewDidLayoutSubviews() /* 577 */
+        addConstraints() /* 590 */
         
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
+    private func addConstraints() { /* 587 */
+        NSLayoutConstraint.activate([ /* 588 */
+            watchlistTable.topAnchor.constraint(equalTo: view.topAnchor), /* 589 */
+            watchlistTable.bottomAnchor.constraint(equalTo: view.bottomAnchor), /* 589 */
+            watchlistTable.leadingAnchor.constraint(equalTo: view.leadingAnchor), /* 589 */
+            watchlistTable.trailingAnchor.constraint(equalTo: view.trailingAnchor), /* 589 */
+                                    ])
     }
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
+    
+    
+   
 }
