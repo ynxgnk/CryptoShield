@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		919BEACC6035A44E1D736E82 /* Pods_CryptoShield.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000FDB37593E46D468BE090E /* Pods_CryptoShield.framework */; };
+		BA0340D12A2D9A7C00889F5D /* CryptoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0340D02A2D9A7C00889F5D /* CryptoDetails.swift */; };
+		BA0340D32A2D9C0D00889F5D /* CryptoDetailsAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0340D22A2D9C0D00889F5D /* CryptoDetailsAPICaller.swift */; };
+		BA0340D52A2DB14500889F5D /* CryptoDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0340D42A2DB14500889F5D /* CryptoDetailsTableViewCell.swift */; };
 		BA39908F2A2C4385009D5D6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39908E2A2C4385009D5D6A /* AppDelegate.swift */; };
 		BA3990912A2C4385009D5D6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3990902A2C4385009D5D6A /* SceneDelegate.swift */; };
 		BA3990982A2C4387009D5D6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA3990972A2C4387009D5D6A /* Assets.xcassets */; };
@@ -37,9 +41,23 @@
 		BA3990E02A2C606A009D5D6A /* ProfileDataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3990DF2A2C606A009D5D6A /* ProfileDataCollectionViewCell.swift */; };
 		BA3990E22A2C7694009D5D6A /* ProfileWatchlistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3990E12A2C7694009D5D6A /* ProfileWatchlistCollectionViewCell.swift */; };
 		BA3990E42A2C8814009D5D6A /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3990E32A2C8814009D5D6A /* ProfileCollectionViewCell.swift */; };
+		BA99F9652A2F23A300C71FE6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99F9642A2F23A300C71FE6 /* HomeView.swift */; };
+		BA99F9672A2F27B500C71FE6 /* TopMoversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99F9662A2F27B500C71FE6 /* TopMoversView.swift */; };
+		BA99F9692A2F280600C71FE6 /* TopMoversItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99F9682A2F280600C71FE6 /* TopMoversItemView.swift */; };
+		BA99F96B2A2F2CB800C71FE6 /* AllCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99F96A2A2F2CB800C71FE6 /* AllCoinsView.swift */; };
+		BA99F96D2A2F2CD300C71FE6 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99F96C2A2F2CD300C71FE6 /* CoinRowView.swift */; };
+		BA99F96F2A2F3A5900C71FE6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99F96E2A2F3A5900C71FE6 /* HomeViewModel.swift */; };
+		BA99F9712A2F3CA200C71FE6 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99F9702A2F3CA200C71FE6 /* Coin.swift */; };
+		BA99F9742A2F43DD00C71FE6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BA99F9732A2F43DD00C71FE6 /* Kingfisher */; };
+		BA99F9762A2F6C6300C71FE6 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99F9752A2F6C6300C71FE6 /* Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		000FDB37593E46D468BE090E /* Pods_CryptoShield.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoShield.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A08E6FC2CD12D84A72ECC12D /* Pods-CryptoShield.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoShield.debug.xcconfig"; path = "Target Support Files/Pods-CryptoShield/Pods-CryptoShield.debug.xcconfig"; sourceTree = "<group>"; };
+		BA0340D02A2D9A7C00889F5D /* CryptoDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetails.swift; sourceTree = "<group>"; };
+		BA0340D22A2D9C0D00889F5D /* CryptoDetailsAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailsAPICaller.swift; sourceTree = "<group>"; };
+		BA0340D42A2DB14500889F5D /* CryptoDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		BA39908B2A2C4385009D5D6A /* CryptoShield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoShield.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA39908E2A2C4385009D5D6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA3990902A2C4385009D5D6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +90,15 @@
 		BA3990DF2A2C606A009D5D6A /* ProfileDataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA3990E12A2C7694009D5D6A /* ProfileWatchlistCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWatchlistCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA3990E32A2C8814009D5D6A /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA99F9642A2F23A300C71FE6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BA99F9662A2F27B500C71FE6 /* TopMoversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversView.swift; sourceTree = "<group>"; };
+		BA99F9682A2F280600C71FE6 /* TopMoversItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversItemView.swift; sourceTree = "<group>"; };
+		BA99F96A2A2F2CB800C71FE6 /* AllCoinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoinsView.swift; sourceTree = "<group>"; };
+		BA99F96C2A2F2CD300C71FE6 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
+		BA99F96E2A2F3A5900C71FE6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BA99F9702A2F3CA200C71FE6 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		BA99F9752A2F6C6300C71FE6 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		FC42C5BF27D569427120EFA9 /* Pods-CryptoShield.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoShield.release.xcconfig"; path = "Target Support Files/Pods-CryptoShield/Pods-CryptoShield.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,17 +106,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA99F9742A2F43DD00C71FE6 /* Kingfisher in Frameworks */,
+				919BEACC6035A44E1D736E82 /* Pods_CryptoShield.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88EC4679AC343A356CCE8C33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				000FDB37593E46D468BE090E /* Pods_CryptoShield.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA3990822A2C4385009D5D6A = {
 			isa = PBXGroup;
 			children = (
 				BA39908D2A2C4385009D5D6A /* CryptoShield */,
 				BA39908C2A2C4385009D5D6A /* Products */,
+				FBF15BE6DDAC5280C0386C1A /* Pods */,
+				88EC4679AC343A356CCE8C33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +170,7 @@
 			children = (
 				BA3990B42A2C44C6009D5D6A /* NewsAPICaller.swift */,
 				BA3990B62A2C44D1009D5D6A /* CryptoAPICaller.swift */,
+				BA0340D22A2D9C0D00889F5D /* CryptoDetailsAPICaller.swift */,
 				BA3990B82A2C44DB009D5D6A /* APIResponse.swift */,
 				BA3990BA2A2C44EA009D5D6A /* HapticsManager.swift */,
 			);
@@ -218,6 +258,7 @@
 				BA3990D72A2C4634009D5D6A /* HomeTableViewCell.swift */,
 				BA3990DF2A2C606A009D5D6A /* ProfileDataCollectionViewCell.swift */,
 				BA3990E32A2C8814009D5D6A /* ProfileCollectionViewCell.swift */,
+				BA0340D42A2DB14500889F5D /* CryptoDetailsTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,6 +268,7 @@
 			children = (
 				BA3990D92A2C4640009D5D6A /* Titles.swift */,
 				BA3990DB2A2C4647009D5D6A /* Icons.swift */,
+				BA0340D02A2D9A7C00889F5D /* CryptoDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,11 +286,92 @@
 		BA3990BC2A2C4519009D5D6A /* HomeTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				BA99F9612A2F237400C71FE6 /* App */,
+				BA99F95F2A2F236000C71FE6 /* Core */,
+				BA99F95E2A2F235800C71FE6 /* Models */,
+				BA99F95D2A2F235000C71FE6 /* Extensions */,
+				BA99F95C2A2F234500C71FE6 /* Utils */,
 				BA3990BF2A2C454E009D5D6A /* HomeViewController.swift */,
 				BA3990C12A2C4560009D5D6A /* CryptoDetailsViewController.swift */,
 				BA3990C32A2C4583009D5D6A /* ChatViewController.swift */,
 			);
 			path = HomeTabBar;
+			sourceTree = "<group>";
+		};
+		BA99F95C2A2F234500C71FE6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BA99F95D2A2F235000C71FE6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA99F9752A2F6C6300C71FE6 /* Double.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BA99F95E2A2F235800C71FE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA99F9702A2F3CA200C71FE6 /* Coin.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA99F95F2A2F236000C71FE6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BA99F9602A2F236D00C71FE6 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BA99F9602A2F236D00C71FE6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BA99F9622A2F238600C71FE6 /* Views */,
+				BA99F9632A2F238C00C71FE6 /* ViewModels */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BA99F9612A2F237400C71FE6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BA99F9622A2F238600C71FE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA99F9642A2F23A300C71FE6 /* HomeView.swift */,
+				BA99F9662A2F27B500C71FE6 /* TopMoversView.swift */,
+				BA99F9682A2F280600C71FE6 /* TopMoversItemView.swift */,
+				BA99F96A2A2F2CB800C71FE6 /* AllCoinsView.swift */,
+				BA99F96C2A2F2CD300C71FE6 /* CoinRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BA99F9632A2F238C00C71FE6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BA99F96E2A2F3A5900C71FE6 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FBF15BE6DDAC5280C0386C1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A08E6FC2CD12D84A72ECC12D /* Pods-CryptoShield.debug.xcconfig */,
+				FC42C5BF27D569427120EFA9 /* Pods-CryptoShield.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,15 +381,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA39909F2A2C4387009D5D6A /* Build configuration list for PBXNativeTarget "CryptoShield" */;
 			buildPhases = (
+				6B1AF56A8F7D4CA3F34C9691 /* [CP] Check Pods Manifest.lock */,
 				BA3990872A2C4385009D5D6A /* Sources */,
 				BA3990882A2C4385009D5D6A /* Frameworks */,
 				BA3990892A2C4385009D5D6A /* Resources */,
+				54D501CD7A6CB8C0D6D4E5D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CryptoShield;
+			packageProductDependencies = (
+				BA99F9732A2F43DD00C71FE6 /* Kingfisher */,
+			);
 			productName = CryptoShield;
 			productReference = BA39908B2A2C4385009D5D6A /* CryptoShield.app */;
 			productType = "com.apple.product-type.application";
@@ -295,6 +423,9 @@
 				Base,
 			);
 			mainGroup = BA3990822A2C4385009D5D6A;
+			packageReferences = (
+				BA99F9722A2F43DD00C71FE6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = BA39908C2A2C4385009D5D6A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -316,14 +447,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		54D501CD7A6CB8C0D6D4E5D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoShield/Pods-CryptoShield-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoShield/Pods-CryptoShield-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoShield/Pods-CryptoShield-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B1AF56A8F7D4CA3F34C9691 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoShield-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA3990872A2C4385009D5D6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BA3990C82A2C45BA009D5D6A /* SearchCryptoViewController.swift in Sources */,
+				BA99F96B2A2F2CB800C71FE6 /* AllCoinsView.swift in Sources */,
 				BA3990B92A2C44DB009D5D6A /* APIResponse.swift in Sources */,
 				BA3990DC2A2C4647009D5D6A /* Icons.swift in Sources */,
+				BA99F9762A2F6C6300C71FE6 /* Double.swift in Sources */,
 				BA3990B72A2C44D1009D5D6A /* CryptoAPICaller.swift in Sources */,
 				BA3990C22A2C4560009D5D6A /* CryptoDetailsViewController.swift in Sources */,
 				BA3990B12A2C44AB009D5D6A /* CryptoTableViewCellViewModel.swift in Sources */,
@@ -331,24 +506,33 @@
 				BA3990C62A2C45AE009D5D6A /* SearchNewsViewController.swift in Sources */,
 				BA3990CC2A2C45DC009D5D6A /* SettingsViewController.swift in Sources */,
 				BA3990E02A2C606A009D5D6A /* ProfileDataCollectionViewCell.swift in Sources */,
+				BA99F9672A2F27B500C71FE6 /* TopMoversView.swift in Sources */,
 				BA3990E42A2C8814009D5D6A /* ProfileCollectionViewCell.swift in Sources */,
 				BA3990D62A2C4625009D5D6A /* NewsTableViewCell.swift in Sources */,
 				BA39908F2A2C4385009D5D6A /* AppDelegate.swift in Sources */,
 				BA3990D02A2C45F5009D5D6A /* RegisterViewController.swift in Sources */,
 				BA3990C02A2C454E009D5D6A /* HomeViewController.swift in Sources */,
 				BA3990B32A2C44B9009D5D6A /* NewsTableViewCellViewModel.swift in Sources */,
+				BA99F96F2A2F3A5900C71FE6 /* HomeViewModel.swift in Sources */,
 				BA3990BE2A2C453F009D5D6A /* NewsViewController.swift in Sources */,
+				BA99F9712A2F3CA200C71FE6 /* Coin.swift in Sources */,
+				BA0340D12A2D9A7C00889F5D /* CryptoDetails.swift in Sources */,
 				BA3990D22A2C4605009D5D6A /* TabBarViewController.swift in Sources */,
 				BA3990BB2A2C44EA009D5D6A /* HapticsManager.swift in Sources */,
+				BA0340D52A2DB14500889F5D /* CryptoDetailsTableViewCell.swift in Sources */,
 				BA3990D82A2C4634009D5D6A /* HomeTableViewCell.swift in Sources */,
 				BA3990CE2A2C45EA009D5D6A /* LoginViewController.swift in Sources */,
 				BA3990CA2A2C45CC009D5D6A /* ProfileViewController.swift in Sources */,
 				BA3990DE2A2C4655009D5D6A /* Extensions.swift in Sources */,
 				BA3990DA2A2C4640009D5D6A /* Titles.swift in Sources */,
+				BA99F9652A2F23A300C71FE6 /* HomeView.swift in Sources */,
+				BA0340D32A2D9C0D00889F5D /* CryptoDetailsAPICaller.swift in Sources */,
 				BA3990D42A2C4618009D5D6A /* TitleCollectionViewCell.swift in Sources */,
+				BA99F96D2A2F2CD300C71FE6 /* CoinRowView.swift in Sources */,
 				BA3990E22A2C7694009D5D6A /* ProfileWatchlistCollectionViewCell.swift in Sources */,
 				BA3990C42A2C4583009D5D6A /* ChatViewController.swift in Sources */,
 				BA3990912A2C4385009D5D6A /* SceneDelegate.swift in Sources */,
+				BA99F9692A2F280600C71FE6 /* TopMoversItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +666,7 @@
 		};
 		BA3990A02A2C4387009D5D6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A08E6FC2CD12D84A72ECC12D /* Pods-CryptoShield.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -489,6 +674,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CryptoShield/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
@@ -510,6 +696,7 @@
 		};
 		BA3990A12A2C4387009D5D6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC42C5BF27D569427120EFA9 /* Pods-CryptoShield.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -517,6 +704,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CryptoShield/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
@@ -558,6 +746,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA99F9722A2F43DD00C71FE6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA99F9732A2F43DD00C71FE6 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA99F9722A2F43DD00C71FE6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BA3990832A2C4385009D5D6A /* Project object */;
 }

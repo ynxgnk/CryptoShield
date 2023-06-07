@@ -8,7 +8,16 @@
 import Foundation
 import UIKit /* 482 */
 
+protocol SearchCryptoViewControllerDelegate: AnyObject {
+    func didSelectCrypto(_ crypto: Crypto)
+}
+
+
 final class SearchCryptoViewController: UIViewController { /* 483 */
+    
+    weak var delegate: SearchCryptoViewControllerDelegate?
+
+    
     private let cryptoTable: UITableView = { /* 476 */
         let table = UITableView() /* 477 */
         table.register(HomeTableViewCell.self,
@@ -65,8 +74,10 @@ extension SearchCryptoViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { /* 494 */
         tableView.deselectRow(at: indexPath, animated: true) /* 495 */
 //        let icon = icons[indexPath.row] /* 539 */
-        let cryptoDetails = CryptoDetailsViewController() /* 532 */
-        navigationController?.pushViewController(cryptoDetails, animated: true) /* 533 */
+//        let cryptoDetails = CryptoDetailsViewController() /* 532 */
+//        navigationController?.pushViewController(cryptoDetails, animated: true) /* 533 */
+        
+
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { /* 535 */

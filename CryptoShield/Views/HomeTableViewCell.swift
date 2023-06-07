@@ -58,12 +58,21 @@ class HomeTableViewCell: UITableViewCell {
         return label /* 364 */
     }()
     
+//    private let percentPriceLabel: UILabel = {
+//        let label = UILabel()
+//        label.font = .systemFont(ofSize: 20, weight: .semibold)
+//        label.textColor = .red
+//        label.numberOfLines = 1
+//        return label
+//    }()
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) { /* 305 */
         super.init(style: style, reuseIdentifier: reuseIdentifier) /* 306 */
         contentView.addSubview(cryptoIcon) /* 312 */
         contentView.addSubview(cryptoTitleLabel) /* 343 */
         contentView.addSubview(cryptoSubtitleLabel) /* 360 */
         contentView.addSubview(cryptoPriceLabel) /* 371 */
+//        contentView.addSubview(percentPriceLabel)
     }
     
     required init?(coder: NSCoder) { /* 306 */
@@ -86,7 +95,7 @@ class HomeTableViewCell: UITableViewCell {
             
             // Title Label constraints
             cryptoTitleLabel.leadingAnchor.constraint(equalTo: cryptoIcon.trailingAnchor, constant: margin), /* 357 */
-            cryptoTitleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: margin+10), /* 357 */
+            cryptoTitleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: margin), /* 357 */
             cryptoTitleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -margin-40), /* 357 */
             
             // Subtitle Label constraints
@@ -97,8 +106,12 @@ class HomeTableViewCell: UITableViewCell {
             
             //Price Label constraints
             cryptoPriceLabel.leadingAnchor.constraint(equalTo: cryptoIcon.trailingAnchor, constant: margin), /* 372 */
-            cryptoPriceLabel.topAnchor.constraint(equalTo: cryptoSubtitleLabel.topAnchor, constant: margin+20), /* 372 */
+            cryptoPriceLabel.topAnchor.constraint(equalTo: cryptoSubtitleLabel.topAnchor, constant: margin+8), /* 372 */
             cryptoPriceLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -margin-40), /* 372 */
+            
+//            percentPriceLabel.leadingAnchor.constraint(equalTo: cryptoIcon.trailingAnchor, constant: margin), /* 372 */
+//            percentPriceLabel.topAnchor.constraint(equalTo: cryptoSubtitleLabel.topAnchor, constant: margin), /* 372 */
+//            percentPriceLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -margin-40), /* 372 */
             
                                     ])
     }
@@ -109,13 +122,14 @@ class HomeTableViewCell: UITableViewCell {
                 cryptoPriceLabel.text = nil /* 374 */
                 cryptoTitleLabel.text = nil /* 374 */
                 cryptoSubtitleLabel.text = nil /* 374 */
+//                percentPriceLabel.text = nil /* 374 */
             }
             
-            func cryptoConfigure(with viewModel: CryptoTableViewCellViewModel) { /* 429 */
+            public func cryptoConfigure(with viewModel: CryptoTableViewCellViewModel) { /* 429 */
                 cryptoTitleLabel.text = viewModel.name /* 430 */
                 cryptoPriceLabel.text = viewModel.price /* 431 */
                 cryptoSubtitleLabel.text = viewModel.symbol /* 432 */
-                
+
                 if let data = viewModel.iconData { /* 433 */
                     cryptoIcon.image = UIImage(data: data) /* 434 */
                 }
@@ -129,7 +143,7 @@ class HomeTableViewCell: UITableViewCell {
                             }
                         }
                     }
-                    
+
                     task.resume() /* 441 */
                 }
             }
